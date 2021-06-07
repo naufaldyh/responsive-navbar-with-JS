@@ -10,6 +10,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: black;
+  color: white;
 }
 
 a {
@@ -66,4 +68,31 @@ main {
   .active {
     right: 0;
   }
+}
+
+@media screen and (min-width: 814px) {
+  #projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "kiri kanan";
+  }
+
+  .left-col {
+    grid-area: "kiri";
+  }
+
+  .right-col {
+    grid-area: "kanan";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.store {
+  height: 50px;
+}
+
+.app {
+  height: 500px;
 }
